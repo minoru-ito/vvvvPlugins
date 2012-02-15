@@ -1,0 +1,42 @@
+﻿2012/02/15 19:10:09 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "E:\github\repositories\vvvvPlugins\AntTweakBarNodes\AntTweakBarNodes.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Release\AntTweakBarNodes.unsuccessfulbuild" を作成しています。
+       GenerateTargetFrameworkMonikerAttribute:
+       すべての出力ファイルが入力ファイルに対して最新なので、ターゲット "GenerateTargetFrameworkMonikerAttribute" を省略します。
+       ClCompile:
+         e:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Idependencies\AntTweakBar\include /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\AntTweakBarNodes.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FUE:\github\repositories\vvvvPlugins\vvvvLib\SlimDX.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\System.ComponentModel.Composition.Codeplex.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Core.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.PluginInterfaces.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Utils.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Utils3rdParty.dll /analyze- /errorReport:prompt src\Stdafx.cpp /clr:nostdlib 
+         Stdafx.cpp
+         e:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Idependencies\AntTweakBar\include /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\AntTweakBarNodes.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FUE:\github\repositories\vvvvPlugins\vvvvLib\SlimDX.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\System.ComponentModel.Composition.Codeplex.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Core.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.PluginInterfaces.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Utils.dll /FUE:\github\repositories\vvvvPlugins\vvvvLib\VVVV.Utils3rdParty.dll /analyze- /errorReport:prompt src\AssemblyInfo.cpp src\GetVariableNode.cpp src\TweakBarNode.cpp src\TweakBarVariables.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         GetVariableNode.cpp
+         TweakBarNode.cpp
+         TweakBarVariables.cpp
+         コードを生成中...
+         すべての出力が最新のものです。
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\app.res" app.rc 
+       Link:
+         e:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\repositories\vvvvPlugins\AntTweakBarNodes\Release\AntTweakBarNodes.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:dependencies\AntTweakBar\lib AntTweakBar.lib /MANIFEST /ManifestFile:"Release\AntTweakBarNodes.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\github\repositories\vvvvPlugins\AntTweakBarNodes\Release\AntTweakBarNodes.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Release\app.res
+         Release\AssemblyInfo.obj
+         Release\GetVariableNode.obj
+         Release\Stdafx.obj
+         Release\TweakBarNode.obj
+         Release\TweakBarVariables.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>TweakBarNode.obj : warning LNK4248: 未解決の typeref トークン (01000024) ('CTwBar') です。イメージを実行できません。
+         AntTweakBarNodes.vcxproj -> E:\github\repositories\vvvvPlugins\AntTweakBarNodes\Release\AntTweakBarNodes.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\github\repositories\vvvvPlugins\AntTweakBarNodes\Release\AntTweakBarNodes.dll;#2" /manifest Release\AntTweakBarNodes.dll.intermediate.manifest
+       PostBuildEvent:
+         copy E:\github\repositories\vvvvPlugins\AntTweakBarNodes\dependencies\AntTweakBar\lib\AntTweakBar.dll E:\github\repositories\vvvvPlugins\AntTweakBarNodes\Release\AntTweakBar.dll
+         :VCEnd
+                 1 個のファイルをコピーしました。
+       FinalizeBuildStatus:
+         ファイル "Release\AntTweakBarNodes.unsuccessfulbuild" を削除しています。
+         "Release\AntTweakBarNodes.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "E:\github\repositories\vvvvPlugins\AntTweakBarNodes\AntTweakBarNodes.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:01.77
