@@ -1,0 +1,10 @@
+L:\develop\vvvvPlugin\minoPlugins\BVHNodes\bin\Release\BVHNodes.dll
+L:\develop\vvvvPlugin\minoPlugins\BVHNodes\bin\Release\BVHNodes.pdb
+L:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\ResolveAssemblyReference.cache
+L:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\BVHNodes.dll
+L:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\BVHNodes.pdb
+G:\develop\vvvvPlugin\minoPlugins\BVHNodes\bin\Release\BVHNodes.dll
+G:\develop\vvvvPlugin\minoPlugins\BVHNodes\bin\Release\BVHNodes.pdb
+G:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\ResolveAssemblyReference.cache
+G:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\BVHNodes.dll
+G:\develop\vvvvPlugin\minoPlugins\BVHNodes\obj\Release\BVHNodes.pdb
