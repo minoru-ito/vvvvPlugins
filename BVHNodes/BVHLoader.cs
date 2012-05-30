@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Globalization;
 
 using VVVV.Utils.VMath;
 using VVVV.SkeletonInterfaces;
@@ -200,7 +201,7 @@ namespace VVVV.Nodes
 
                 FSkeleton.Root = joint;
 
-                FSkeleton.BuildJointTable();    //that's happen here?
+                FSkeleton.BuildJointTable();    //what's happen here?
             }
 
             while (index < tokens.Count)
@@ -213,10 +214,18 @@ namespace VVVV.Nodes
                     Vector3D translate = new Vector3D();
 
                     //set offset(=initial) position
-                    translate.x = double.Parse(tokens[index++]);
-                    translate.y = double.Parse(tokens[index++]);
-                    translate.z = double.Parse(tokens[index++]);// *-1;   //Right Hand to Left Hand
                     
+                    //This is not working with some culture settings
+                    //translate.x = double.Parse(tokens[index++]);
+                    //translate.y = double.Parse(tokens[index++]);
+                    //translate.z = double.Parse(tokens[index++]);// *-1;   //Right Hand to Left Hand
+                    
+                    //to solve that, use InvariantInfo
+                    translate.x = double.Parse(tokens[index++], NumberFormatInfo.InvariantInfo);
+                    translate.y = double.Parse(tokens[index++], NumberFormatInfo.InvariantInfo);
+                    translate.z = double.Parse(tokens[index++], NumberFormatInfo.InvariantInfo);
+                    
+
                     //set BaseTransform
                     joint.BaseTransform = VMath.Translate(translate);
                     //joint.AnimationTransform = VMath.Translate(translate);
@@ -224,7 +233,8 @@ namespace VVVV.Nodes
                 else if (token == "CHANNELS")
                 {
                     //get channel count from token
-                    int channelCount = int.Parse(tokens[index++]);
+                    //int channelCount = int.Parse(tokens[index++]);
+                    int channelCount = int.Parse(tokens[index++], NumberFormatInfo.InvariantInfo);
 
                     //set channel count
                     joint.SetChannelCount(channelCount);
@@ -312,14 +322,16 @@ namespace VVVV.Nodes
                     //Frames: line
 
                     //separate with ':' and get second value(= frame count)
-                    FFrameCount = int.Parse(line.Split(':')[1]);
+                    //FFrameCount = int.Parse(line.Split(':')[1]);
+                    FFrameCount = int.Parse(line.Split(':')[1], NumberFormatInfo.InvariantInfo);
                 }
                 else if (line.IndexOf("Frame Time:") != -1)
                 {
                     //Frame Time: line
 
                     //separate with ':' and get second value(= frame time)
-                    FFrameTime = float.Parse(line.Split(':')[1]);
+                    //FFrameTime = float.Parse(line.Split(':')[1]);
+                    FFrameTime = float.Parse(line.Split(':')[1], NumberFormatInfo.InvariantInfo);
                 }
                 else
                 {
@@ -353,7 +365,8 @@ namespace VVVV.Nodes
                 List<float> frameData = new List<float>();
                 for (int i = 0; i < channels.Length; i++)
                 {
-                    frameData.Add(float.Parse(channels[i]));
+                    //frameData.Add(float.Parse(channels[i]));
+                    frameData.Add(float.Parse(channels[i], NumberFormatInfo.InvariantInfo));
                 }
 
                 //add frame data
